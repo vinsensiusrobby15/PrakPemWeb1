@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Praktikum 1</title>
+  <style>
+    * {
+      scroll-behavior: smooth;
+    }
+
+    table {
+      border: 1px solid black;
+    }
+
+    td,
+    th {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="/img/myimg.jpeg" alt="profile picture" width="100" />
+    <h1>Vinsensius Robby Anggara</h1>
+    <p>Saya adalah mahasiswa ITERA Teknik Informatika 2020</p>
+    <nav>
+      <ul>
+        <li><a href="#tentang">About Me</a></li>
+        <li><a href="#riwayat">Riwayat Hidup</a></li>
+        <li><a href="#kontak">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article id="tentang">
+      <h2>Tentang saya</h2>
+      <p>
+        Nama saya Vinsensius Robby Anggara, Saya sedang mengerjakan tugas praktikum pemweb kelas RC dengan
+        menggunakan HTML.
+        Ini adalah tugas pertama saya pada praktikum pemweb kelas RC.
+      </p>
+
+      <figure>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/NN9exr9WgXk" title="YouTube video player"
+          allowfullscreen>
+        </iframe>
+        <figcaption>Video saya</figcaption>
+      </figure>
+    </article>
+
+    <article id="riwayat">
+      <h2>Daftar Riwayat Hidup</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th rowspan="2">No</th>
+            <th rowspan="2">Riwayat</th>
+            <th colspan="2">Tahun</th>
+          </tr>
+          <tr>
+            <th>Mulai</th>
+            <th>Selesai</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>SMP Negeri 22 Bandar Lampung</td>
+            <td>2014</td>
+            <td>2017</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>SMA Negeri 13 Bandar Lampung</td>
+            <td>2017</td>
+            <td>2020</td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+
+    <article id="kontak">
+      <h2>Kontak</h2>
+      <form action="get">
+        <label for="nama">Nama : </label>
+        <input type="text" name="nama" id="nama" /><br /><br />
+
+        <p>Jenis Kelamin</p>
+        <br />
+        <input type="radio" name="jenis_kelamin" value="laki-laki" id="laki" />
+        <label for="laki">Laki-Laki</label><br />
+        <input type="radio" name="jenis_kelamin" value="perempuan" id="perempuan" />
+        <label for="perempuan">Perempuan</label><br /><br />
+
+        <label>Pilih media sosial jika ingin menghubungi saya</label>
+        <br />
+        <input type="checkbox" name="media_sosial" value="facebook" id="facebook" />
+        <label for="facebook">Facebook</label><br />
+        <input type="checkbox" name="media_sosial" value="twitter" id="twitter" />
+        <label for="twitter">Twitter</label><br />
+        <input type="checkbox" name="media_sosial" value="instagram" id="instagram" />
+        <label for="instagram">Instagram</label><br /><br />
+        <input type="submit" value=" Kirim" />
+      </form>
+    </article>
+  </main>
+  <footer>
+    <p>ini akhir</a></p>
+  </footer>
+</body>
+
+</html>
